@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+.timeSelector-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.timeSelector {
+  display: flex;
+  width: 200%;
+}
+.hour {
+  background: #222;
+  height: 80px;
+  flex: 1;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hour small {
+  font-size: 0.6rem;
+  margin-right: -5px;
+}
+
+.hour .name {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.hour .minutes {
+  flex: 1;
+  display: flex;
+}
+
+.hour .startHour {
+  height: 100%;
+  width: 10%;
+  border-right: 1px dashed #cecece;
+  color: #545454;
+  font-size: 0.7rem;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+.hour .endHour {
+  height: 100%;
+  width: 5%;
+  color: #545454;
+  font-size: 0.7rem;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+.hour .mins {
+  height: 100%;
+  flex: 1;
+  border-right: 1px dashed #cecece;
+  color: #545454;
+  font-size: 0.5rem;
+  line-height: 80px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.hour .mins:hover {
+  background: #3f3f3f;
+}
+
+.selected  {
+  background: #1f6091;
+}
